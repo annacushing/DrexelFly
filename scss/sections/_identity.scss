@@ -1,0 +1,33 @@
+/* =============
+    Identity
+============= */
+
+#identity{
+    p{
+        font-family: 'Lora';
+        font-weight: 400;
+        color: $dark;
+        font-size: rem-calc(32);
+        padding: 48px 48px 16px;
+    }
+    h4{
+        font-family: 'Poppins';
+        font-size: rem-calc(40);
+        letter-spacing: rem-calc(0.2);
+        padding: 0px 48px 80px;
+    }
+    ul{
+        li:nth-child(1) {
+            background-color: $watermelon;
+        }
+        li:nth-child(2) {
+            background-color: $peach;
+        }
+        li:nth-child(3) {
+            background-color: $tan;
+        }
+        li:nth-child(4) {
+            background-color: $confetti;
+        }
+    }
+}

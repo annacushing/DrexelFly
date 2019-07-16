@@ -1,0 +1,31 @@
+/* =============
+    Events
+============= */
+
+#events{
+    h1{
+        color: $dark;
+        margin-bottom: -24px;
+    }
+    ul{
+        li{
+            padding: 48px 0px;
+            p{
+                font-family: 'Lora';
+                font-weight: 400;
+                color: $dark;
+                font-size: rem-calc(24);
+                line-height: rem-calc(32);
+                padding: 0px 32px 32px 32px;
+            }
+            .button{
+                margin: 24px;
+            }
+        }
+        li:nth-child(3) {
+            background-color: $sea;
+            padding: 24px 0px 40px 0px;
+            margin: 24px 20% 80px 0px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* =============
+    Together
+============= */
+
+#together{
+    background-color: $dark;
+    padding-bottom: 80px;
+    article{
+        h1{
+            color: $sea;
+            font-weight: 600;
+            font-size: rem-calc(48);
+            line-height: rem-calc(48);
+            letter-spacing: rem-calc(0.75);
+        }
+        img{
+            padding: 24px;
+            max-width: 80%;
+            align-items: center;
+        }
+
+    }
+    aside{
+        h2{
+            font-family: 'Space Mono', monospace;
+            font-size: 64px;
+            color: $sea;
+            font-size: rem-calc(64);
+            letter-spacing: rem-calc(0.75);
+            padding-left: 24px;
+        }
+        p{
+            color: $light;
+        }
+        a{
+            color: $confetti;
+            margin: 32px;
+        }
+    }
+}

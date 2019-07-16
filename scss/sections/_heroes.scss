@@ -1,0 +1,24 @@
+/* =============
+    Heroes
+============= */
+
+#hero{
+    height: 457px;
+    background-image: url('../img/hero/hero.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: -16px;
+    background-repeat: no-repeat;
+    display: flex;
+    div{
+        display: inline-block;
+        align-self: flex-end;
+    }
+}
+
+// #hero-2{
+//     height: 421px;
+//     background-image: url('../img/hero/hero-2.jpg');
+//     background-size: cover;
+//     background-position: -180px 0;
+// }

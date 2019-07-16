@@ -1,0 +1,36 @@
+/* =============
+    Totals
+============= */
+
+#totals{
+    padding-bottom: 80px;
+    h1{
+        color: $mystic;
+    }
+    h6{
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        color: $sea;
+        font-size: rem-calc(20);
+        color: $dark;
+        padding: 0px 24px;
+    }
+    aside{
+        padding: 40px 0px;
+        .link{
+            color: $mystic;
+            margin: 0px 24px;
+        }
+    }
+}
+
+#tan-bg{
+    background-color: $tan;
+    height: 24px;
+    border-radius: 20px;
+    margin: 0px 24px;
+    #bg-fill{
+        grid-template-columns: 62% auto;
+        color: $mystic;
+    }
+}
