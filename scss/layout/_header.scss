@@ -6,13 +6,15 @@ header {
     grid-template-columns: 20% auto;
     padding: 10px;
     background-color: $light;
-    padding: 32px 16px 16px 16px;
+    padding: 24px 16px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 
     nav {
         i {
             font-size: rem-calc(30);
             color: $dark;
-            top: -24px;
         }
     }
 

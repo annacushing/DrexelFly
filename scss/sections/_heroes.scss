@@ -7,18 +7,68 @@
     background-image: url('../img/hero/hero.jpg');
     background-size: cover;
     width: 100%;
-    background-position: -16px;
     background-repeat: no-repeat;
     display: flex;
     div{
+        padding: 16px;
         display: inline-block;
         align-self: flex-end;
+        @include md{
+            margin: 0 auto 0 50%;
+            width: 50%;
+        }
+        @include lg{
+            margin: 0 auto 0 63%;
+            width: 37%;
+        }
+        p{
+            @include md{
+                font-size: rem-calc(24);
+                line-height: rem-calc(32);
+            }
+        }
+
     }
 }
 
-// #hero-2{
-//     height: 421px;
-//     background-image: url('../img/hero/hero-2.jpg');
-//     background-size: cover;
-//     background-position: -180px 0;
-// }
+#hero2{
+    height: 378px;
+    background-image: url('../img/hero/hero2.jpg');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    @include sm{
+        display: none;
+    }
+    @include lg{
+        display: inline-block;
+    }
+    div{
+        display: inline-block;
+        align-self: flex-end;
+        h1{
+            color: $dark;
+            font-family: 'Space Mono';
+
+            padding: 48px;
+            @include md{
+                font-size: rem-calc(40);
+                line-height: rem-calc(40);
+            }
+            @include lg{
+                font-size: rem-calc(80);
+                line-height: rem-calc(80);
+            }
+        }
+    }
+}
+
+#hero3{
+    height: 378px;
+    background-image: url('../img/hero/hero3.jpg');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}

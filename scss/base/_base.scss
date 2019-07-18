@@ -19,9 +19,9 @@ a:link, a:visited{
 
 .content-grid{
     display: grid;
-    grid-template-columns: 10px auto 10px;
+    // grid-template-columns: 10px auto 10px;
     grid-template-areas: ". content .";
-    padding: 60px 0;
+    // padding: 60px 0;
 
     >div{
         grid-area: content;
