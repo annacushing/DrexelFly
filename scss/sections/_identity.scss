@@ -40,6 +40,15 @@
             grid-template-rows: repeat(1, 240px);
         }
 
+        @include xl{
+            background-color: $dark;
+            padding: 80px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+            ". dancer donor healer fighter .";
+            grid-template-rows: repeat(1, 240px);
+        }
+
         li:nth-child(1) {
             background-color: $watermelon;
             grid-area: dancer;

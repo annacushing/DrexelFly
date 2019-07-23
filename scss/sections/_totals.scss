@@ -7,10 +7,14 @@
     background-color: $light;
     >div{
         @include md{
-            width: 60%;
+            width: 80%;
             margin: 0 auto;
         }
         @include lg{
+            width: 60%;
+            margin: 0 auto;
+        }
+        @include xl{
             width: 40%;
             margin: 0 auto;
         }

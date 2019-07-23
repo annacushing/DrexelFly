@@ -39,7 +39,7 @@
 		},
 	"/img/gallery/banner.jpg": {
 		"ft": 16384,
-		"iS": 24756,
+		"iS": 50944,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/banner.jpg",
@@ -50,7 +50,7 @@
 		},
 	"/img/gallery/kid1.jpg": {
 		"ft": 16384,
-		"iS": 32542,
+		"iS": 33532,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/kid1.jpg",
@@ -61,7 +61,7 @@
 		},
 	"/img/gallery/kid2.jpg": {
 		"ft": 16384,
-		"iS": 20876,
+		"iS": 17202,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/kid2.jpg",
@@ -72,7 +72,7 @@
 		},
 	"/img/gallery/kid3.jpg": {
 		"ft": 16384,
-		"iS": 19971,
+		"iS": 19741,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/kid3.jpg",
@@ -83,7 +83,7 @@
 		},
 	"/img/gallery/mission.jpg": {
 		"ft": 16384,
-		"iS": 5654,
+		"iS": 13902,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/mission.jpg",
@@ -124,6 +124,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/img/nav/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/nav/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/img/together/children.svg": {
 		"ft": 2097152,

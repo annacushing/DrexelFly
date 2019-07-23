@@ -334,18 +334,32 @@ a:link, a:visited {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.03125rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
   padding: 40px 24px; }
+  @media (min-width: 498px) {
+    h1 {
+      letter-spacing: 0.03125rem;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 789px) {
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 2.5rem;
+      line-height: 3rem; } }
 
 p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.0125rem;
-  line-height: 1.5rem;
   padding: 32px; }
+  @media (min-width: 498px) {
+    p {
+      font-size: 1rem;
+      letter-spacing: 0.0125rem;
+      line-height: 1.75rem; } }
+  @media (min-width: 789px) {
+    p {
+      font-size: 1.5rem;
+      letter-spacing: 0.025rem;
+      line-height: 2rem; } }
 
 /* =============
     Buttons
@@ -448,17 +462,23 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "ben jamie" "allison ciarlo";
       grid-template-rows: repeat(2, 350px); } }
+  @media (min-width: 498px) {
+    #callouts ul {
+      grid-template-rows: repeat(2, 280px); } }
   @media (min-width: 1210px) {
     #callouts ul {
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "ben jamie allison ciarlo";
-      grid-template-rows: repeat(1, 280px); } }
+      grid-template-rows: repeat(1, 240px); } }
   #callouts ul li {
     font-family: 'Space Mono';
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.75rem;
     padding: 48px; }
+    @media (min-width: 789px) {
+      #callouts ul li {
+        padding: 56px; } }
   #callouts ul li:nth-child(1) {
     grid-area: ben;
     color: #FEF7E8;
@@ -480,20 +500,17 @@ footer {
     Contact
 ============= */
 #contact {
-  background-color: #FEF7E8;
+  background-color: #F3E6CB;
   padding-bottom: 80px;
   display: block; }
   #contact > div {
-    margin: 0px auto; }
+    margin: 0px auto;
+    max-width: 789px;
+    margin: 0 auto; }
     @media (min-width: 789px) {
       #contact > div {
-        width: 75%; } }
-    @media (min-width: 968px) {
-      #contact > div {
-        width: 50%; } }
-    @media (min-width: 1210px) {
-      #contact > div {
-        width: 30%; } }
+        width: 80%;
+        padding: 80px 0px; } }
     #contact > div div p {
       border: 1px solid #1D1F20;
       border-radius: 3px;
@@ -512,23 +529,38 @@ footer {
 /* =============
     Events
 ============= */
+#events div {
+  background-color: #FEF7E8; }
+  @media (min-width: 789px) {
+    #events div {
+      padding: 80px; } }
+
 #events h1 {
   color: #1D1F20;
-  margin-bottom: -24px; }
+  margin-bottom: -24px;
+  text-align: center; }
 
 #events ul {
+  max-width: 968px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: "event1" "event2" "event3";
   grid-template-rows: repeat(3, 280px); }
   @media (min-width: 789px) {
     #events ul {
-      grid-template-columns: repeat(2, 40%);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "event1 event2" "event3 event3";
       grid-template-rows: repeat(2, 350px);
       align-items: center; } }
   @media (min-width: 968px) {
     #events ul {
-      grid-template-columns: repeat(3, 30%);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "event1 event2 event3";
+      grid-template-rows: repeat(1, 350px);
+      align-items: center; } }
+  @media (min-width: 1210px) {
+    #events ul {
+      grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "event1 event2 event3";
       grid-template-rows: repeat(1, 350px);
       align-items: center; } }
@@ -538,9 +570,11 @@ footer {
       font-family: 'Lora';
       font-weight: 400;
       color: #1D1F20;
-      font-size: 1.5rem;
+      font-size: 1.375rem;
       line-height: 2rem;
       padding: 0px 32px 32px 32px; }
+    #events ul li span {
+      font-size: 1.875rem; }
     #events ul li .button {
       margin: 24px; }
   #events ul li:nth-child(1) {
@@ -558,28 +592,30 @@ footer {
   background-color: black; }
 
 #gallery ul {
+  max-width: 968px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: "mission" "kid1" "kid2" "kid3" "banner";
   grid-template-rows: repeat(5, 272px); }
   @media (min-width: 498px) {
     #gallery ul {
-      grid-template-columns: repeat(1, 80%);
-      grid-template-areas: "mission" "kid1" "kid2" "kid3";
-      grid-template-rows: repeat(4, 350px);
-      padding: 24px;
-      grid-gap: 12px; } }
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "mission kid1" "kid2 kid3";
+      grid-template-rows: repeat(2, 240px);
+      grid-gap: 8px; } }
   @media (min-width: 789px) {
     #gallery ul {
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "mission kid1" "kid2 kid3" "banner banner";
       grid-template-rows: repeat(3, 350px);
       padding: 80px;
-      grid-gap: 40px; } }
+      grid-gap: 32px; } }
   @media (min-width: 968px) {
     #gallery ul {
-      grid-template-columns: repeat(3, 30%);
-      grid-template-areas: "mission kid3 kid3" "kid2 kid3 kid3" "kid1 banner banner";
-      grid-template-rows: repeat(3, 350px); } }
+      max-width: 600px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "mission kid3" "banner banner" "kid2 kid1";
+      grid-template-rows: repeat(3, 280px); } }
   #gallery ul li {
     background-size: cover;
     height: 100%; }
@@ -597,7 +633,8 @@ footer {
     grid-area: kid3; }
   #gallery ul li:nth-child(5) {
     background-image: url("../img/gallery/banner.jpg");
-    grid-area: banner; }
+    grid-area: banner;
+    background-position: 0 -50px; }
 
 /* =============
     Heroes
@@ -609,6 +646,14 @@ footer {
   width: 100%;
   background-repeat: no-repeat;
   display: flex; }
+  @media (min-width: 968px) {
+    #hero {
+      background-position: 0 -100px;
+      height: 540px; } }
+  @media (min-width: 1210px) {
+    #hero {
+      background-position: 0 -220px;
+      height: 680px; } }
   #hero div {
     padding: 16px;
     display: inline-block;
@@ -624,7 +669,11 @@ footer {
     @media (min-width: 789px) {
       #hero div p {
         font-size: 1.5rem;
-        line-height: 2rem; } }
+        line-height: 2rem;
+        background-color: #FEF7E8;
+        margin: 40px;
+        padding: 40px;
+        border-radius: 16px; } }
 
 #hero2 {
   height: 378px;
@@ -639,21 +688,20 @@ footer {
   @media (min-width: 968px) {
     #hero2 {
       display: inline-block; } }
-  #hero2 div {
-    display: inline-block;
-    align-self: flex-end; }
-    #hero2 div h1 {
-      color: #1D1F20;
-      font-family: 'Space Mono';
-      padding: 48px; }
-      @media (min-width: 789px) {
-        #hero2 div h1 {
-          font-size: 2.5rem;
-          line-height: 2.5rem; } }
-      @media (min-width: 968px) {
-        #hero2 div h1 {
-          font-size: 5rem;
-          line-height: 5rem; } }
+  #hero2 div h1 {
+    color: #1D1F20;
+    font-family: 'Space Mono';
+    padding: 48px; }
+    @media (min-width: 789px) {
+      #hero2 div h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center; } }
+    @media (min-width: 968px) {
+      #hero2 div h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        text-align: center; } }
 
 #hero3 {
   height: 378px;
@@ -662,6 +710,9 @@ footer {
   width: 100%;
   background-repeat: no-repeat;
   display: flex; }
+  @media (min-width: 1210px) {
+    #hero3 {
+      height: 500px; } }
 
 /* =============
     Identity
@@ -694,6 +745,13 @@ footer {
       grid-template-columns: repeat(4, 25%);
       grid-template-areas: "dancer donor healer fighter";
       grid-template-rows: repeat(1, 240px); } }
+  @media (min-width: 1210px) {
+    #identity ul {
+      background-color: #1D1F20;
+      padding: 80px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: ". dancer donor healer fighter .";
+      grid-template-rows: repeat(1, 240px); } }
   #identity ul li:nth-child(1) {
     background-color: #F77C68;
     grid-area: dancer; }
@@ -712,59 +770,69 @@ footer {
 ============= */
 #together {
   background-color: #1D1F20;
-  padding-bottom: 80px;
-  display: grid;
-  grid-template-areas: "children" "cmn";
-  grid-template-rows: repeat(2, 560px); }
-  @media (min-width: 498px) {
-    #together {
-      grid-template-columns: repeat(1, 90%);
-      grid-template-areas: "children" "cmn";
-      grid-template-rows: repeat(2, 360px); } }
-  @media (min-width: 789px) {
-    #together {
-      grid-template-columns: repeat(1, 50%);
-      grid-template-areas: "children" "cmn";
-      grid-template-rows: repeat(2, 360px); } }
-  @media (min-width: 968px) {
-    #together {
-      grid-template-columns: repeat(2, 50%);
-      grid-template-areas: "children cmn" "children cmn";
-      grid-template-rows: repeat(2, 240px); } }
-  @media (min-width: 1210px) {
-    #together {
-      justify-content: center;
-      grid-template-columns: repeat(2, 30%);
-      grid-template-areas: "children cmn" "children cmn";
-      grid-template-rows: repeat(2, 240px); } }
-  #together article h1 {
-    color: #FEF7E8;
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 3rem;
-    letter-spacing: 0.046875rem; }
-  #together article img {
-    padding: 24px;
-    width: 80%;
-    align-items: center;
-    display: inline-block;
-    align-self: flex-end; }
-  #together aside {
-    grid-area: cmn;
-    display: inline-block;
-    align-self: flex-end; }
-    #together aside h2 {
-      font-family: 'Space Mono', monospace;
-      font-size: 64px;
-      color: #9EDAE3;
-      font-size: 4rem;
-      letter-spacing: 0.046875rem;
-      padding-left: 24px; }
-    #together aside div p {
-      color: #FEF7E8; }
-    #together aside div a {
-      color: #F0EE64;
-      margin: 32px; }
+  padding-bottom: 80px; }
+  #together > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "children" "cmn";
+    grid-template-rows: repeat(2, 380px); }
+    @media (min-width: 498px) {
+      #together > div {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "children" "cmn";
+        grid-template-rows: repeat(2, 300px); } }
+    @media (min-width: 789px) {
+      #together > div {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "children" "cmn";
+        grid-template-rows: repeat(2, 300px); } }
+    @media (min-width: 968px) {
+      #together > div {
+        padding: 80px 0px;
+        margin: 0 auto;
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "children" "cmn";
+        grid-template-rows: repeat(2, auto);
+        margin: 0 auto; } }
+    #together > div article h1 {
+      color: #FEF7E8;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: 0.046875rem; }
+    #together > div article img {
+      grid-area: children;
+      padding: 24px;
+      align-items: center;
+      display: inline-block;
+      align-self: flex-end;
+      max-width: 240px; }
+      @media (min-width: 498px) {
+        #together > div article img {
+          max-width: 320px; } }
+      @media (min-width: 789px) {
+        #together > div article img {
+          max-width: 400px; } }
+      @media (min-width: 968px) {
+        #together > div article img {
+          max-width: 600px; } }
+    #together > div aside {
+      grid-area: cmn;
+      display: inline-block;
+      align-self: flex-end; }
+      #together > div aside h2 {
+        font-family: 'Space Mono', monospace;
+        font-size: 64px;
+        color: #9EDAE3;
+        font-size: 4rem;
+        letter-spacing: 0.046875rem;
+        padding-left: 24px; }
+      #together > div aside div p {
+        color: #FEF7E8; }
+      #together > div aside div a {
+        color: #F0EE64;
+        margin: 32px; }
 
 /* =============
     Totals
@@ -774,9 +842,13 @@ footer {
   background-color: #FEF7E8; }
   @media (min-width: 789px) {
     #totals > div {
-      width: 60%;
+      width: 80%;
       margin: 0 auto; } }
   @media (min-width: 968px) {
+    #totals > div {
+      width: 60%;
+      margin: 0 auto; } }
+  @media (min-width: 1210px) {
     #totals > div {
       width: 40%;
       margin: 0 auto; } }
