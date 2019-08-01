@@ -16,15 +16,51 @@
 
 <body>
 
+    <!-- Your options for data-navigation-position is: left | right -->
+<!-- Your options for data-navigation-slide is: over | under | push -->
+<section id="off-canvas-container" data-navigation-position="right" data-navigation-slide="push">
+    <div>
+        <button>
+            <i class="far fa-times-circle" id="close-btn"></i>
+        </button>
+        <div id="nav-container">
+            <nav data-nav="main-navigation">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<!-- The header needs to be outside of the main tag if you are going to position fix it. -->
+<header data-fixed="fixed-item">
+    <div>
+        <!-- burger icon -->
+        <section id="burger-icon" >
+            <i class="fas fa-bars"></i>
+        </section>
+    </div>
+</header>
+
     <main>
-        <header>
+
+        <!-- overlay for the view when the menu is visible. Please don't move -->
+    <div class="js-off-canvas-overlay" id="overlay"></div>
+    <!-- overlay for the view when the menu is visible. Please don't move -->
+    
+        <!-- <header>
             <nav>
                 <i class="fas fa-bars"></i>
             </nav>
             <aside>
                 <a href="#" class="button">DONATE</a>
             </aside>
-        </header>
+        </header> -->
 
         <section id="hero">
             <div>
