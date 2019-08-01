@@ -8,7 +8,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8692d91ea3.js"></script>
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400|Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Space+Mono&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
     <title>Drexel Fly</title>
@@ -18,12 +18,22 @@
 
     <main>
         <header>
-            <nav>
-                <i class="fas fa-bars"></i>
+            <section>
+                <img src="img/nav/logo.svg" alt="Fly Logo">
+            </section>
+            <section>
+                <button id="burger-icon">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </section>
+
+            <nav data-nav="main-navigation">
+                <ul>
+                    <li><a href="#">GET INVOLVED</a></li>
+                    <li><a href="#">WHO IT'S FOR</a></li>
+                    <li><a href="#" class="button">DONATE</a></li>
+                </ul>
             </nav>
-            <aside>
-                <a href="#" class="button">DONATE</a>
-            </aside>
         </header>
 
         <section id="hero">
@@ -44,17 +54,19 @@
         </section>
 
         <section id="together" class="content-grid">
-            <article>
-                <h1>BECAUSE TOGETHER, WE FLY.</h1>
-                <img src="img/together/children.svg" alt="Five children waving">
-            </article>
-            <aside>
-                <h2>100%</h2>
-                <div>
-                    <p>of your donation will go towards giving hope and financial security to young patients of CHOP and their families.</p>
-                    <a href="#" class="link">LEARN MORE</a>
-                </div>
-            </aside>
+            <div>
+                <article>
+                    <h1>BECAUSE TOGETHER, WE FLY.</h1>
+                    <img src="img/together/children.svg" alt="Five children waving">
+                </article>
+                <aside>
+                    <h2>100%</h2>
+                    <div>
+                        <p>of your donation will go towards giving hope and financial security to young patients of CHOP and their families.</p>
+                        <a href="#" class="link">LEARN MORE</a>
+                    </div>
+                </aside>
+            </div>
         </section>
 
         <section id="totals">
@@ -119,15 +131,15 @@
                 <h1>UPCOMING EVENTS</h1>
                 <ul>
                     <li>
-                        <p>info session <br>sept 24 <br>2pm – 4pm <br>race lawn</p>
+                        <p><span>info session</span><br>sept 24 <br>2pm – 4pm <br>race lawn</p>
                         <a href="#" class="button">REMIND ME</a>
                     </li>
                     <li>
-                        <p>donation day <br>nov 8 <br>7am – 11pm <br>drexel's campus</p>
+                        <p><span>donation day</span><br>nov 8 <br>7am – 11pm <br>drexel's campus</p>
                         <a href="#" class="button">DONATE</a>
                     </li>
                     <li>
-                        <p>dance marathon <br>may 12 <br>5pm – 10pm <br>drexel armory</p>
+                        <p><span>dance marathon</span><br>may 12 <br>5pm – 10pm <br>drexel armory</p>
                         <a href="#" class="button">REGISTER</a>
                     </li>
                 </ul>

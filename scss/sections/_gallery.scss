@@ -6,6 +6,8 @@
         background-color: black;
     }
     ul {
+        max-width: 968px;
+        margin: 0 auto;
         display: grid;
         grid-template-areas:
         "mission"
@@ -16,36 +18,36 @@
         grid-template-rows: repeat(5, 272px);
 
         @include sm{
-            grid-template-columns: repeat(1, 80%);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-areas:
-            "mission"
-            "kid1"
-            "kid2"
-            "kid3";
-            grid-template-rows: repeat(4, 350px);
-            padding: 24px;
-            grid-gap: 12px;
+            "mission kid1"
+            "kid2 kid3";
+            grid-template-rows: repeat(2, 240px);
+            grid-gap: 8px;
         }
 
         @include md{
-            grid-template-columns: repeat(2, 50%);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-areas:
             "mission kid1"
             "kid2 kid3"
             "banner banner";
             grid-template-rows: repeat(3, 350px);
             padding: 80px;
-            grid-gap: 40px;
+            grid-gap: 32px;
         }
 
         @include lg{
-            grid-template-columns: repeat(3, 30%);
+            max-width: 600px;
+            grid-template-columns: repeat(2, 1fr);
             grid-template-areas:
-            "mission kid3 kid3"
-            "kid2 kid3 kid3"
-            "kid1 banner banner";
-            grid-template-rows: repeat(3, 350px);
+            "mission kid3"
+            "banner banner"
+            "kid2 kid1";
+            grid-template-rows: repeat(3, 280px);
         }
+
+
 
         li {
             background-size: cover;
@@ -71,6 +73,7 @@
         li:nth-child(5) {
             background-image: url("../img/gallery/banner.jpg");
             grid-area: banner;
+            background-position: 0 -50px;
         }
     }
 }
